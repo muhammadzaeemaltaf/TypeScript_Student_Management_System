@@ -167,15 +167,7 @@ async function payFee() {
 }
 
 async function showStatus() {
-  const inquir = await inquirer.prompt([
-    {
-      name: "stdID",
-      type: "number",
-      message: "Enter Student ID: ",
-      validate: (input) => (input ? true : "ID cannot be empty"),
-    },
-  ]);
-  let student = students.find((student) => student.id === inquir.stdID);
+  let student = await findStudent();
   if (!student) {
     console.log("Student ID not found.");
     return;

@@ -1,6 +1,6 @@
 {
   "name": "muhammadzaeemaltaf_student_management_system",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A command-line interface (CLI) tool for managing student course enrollments and balances. This tool allows students to enroll in courses, check for existing enrollments, and manage their balances directly from the terminal. Ideal for educational institutions or personal projects to track student course enrollments efficiently.",
   "main": "app.js",
   "type": "module",
